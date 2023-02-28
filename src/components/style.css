@@ -1,0 +1,150 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background-image: url(./images/bg-intro-desktop.png);
+	background-size: cover;
+	background-color: hsl(0, 100%, 74%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#app {
+	width: 70rem;
+	height: 40rem;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+#app .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+#app .info .infoHeader {
+	margin-left: 4rem;
+	margin-right: 4rem;
+}
+
+#app .info .infoParagraph {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-top: 2rem;
+}
+
+#app .formAndButtons {
+	display: flex;
+	flex-direction: column;
+}
+#app .formAndButtons .costBanner {
+	text-align: center;
+	color: white;
+	background-color: hsl(248, 32%, 49%);
+	padding-top: 0.7rem;
+	padding-bottom: 0.7rem;
+	border-radius: 0.7rem;
+	margin-bottom: 1.5rem;
+}
+#app .formAndButtons .costBanner .boldedInfo {
+	font-weight: 800;
+}
+
+#app .formAndButtons .wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	min-height: 89%;
+	border-radius: 0.7rem;
+}
+
+#app .formAndButtons .wrapper form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.5rem;
+}
+
+form input {
+	border: solid 1px darkgray;
+	border-radius: 0.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+}
+
+form input:hover {
+	border: solid 1px black;
+}
+
+.error {
+	border: solid 1px red;
+	margin-right: 2rem;
+	background: url(./images/icon-error.svg) no-repeat right;
+}
+form p {
+	display: none
+}
+
+#app .formAndButtons .wrapper form .warning {
+	font-size: 0.7rem;
+	text-align: center;
+	text-align: right;
+	margin-right: 2rem;
+	color: hsl(0, 100%, 74%);
+	display: inline;
+}
+
+#app .formAndButtons .wrapper .register {
+	border-radius: 0.5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	background-color: hsl(154, 59%, 51%);
+	border: none;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+#app .formAndButtons .wrapper .register:hover {
+	background-color: lightgreen;
+}
+
+#app .formAndButtons .wrapper .terms {
+	font-size: 0.7rem;
+	text-align: center;
+}
+#app .formAndButtons .wrapper .terms a {
+	color: hsl(0, 100%, 74%);
+	font-weight: 800;
+	text-decoration: none;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+footer {
+	margin-top: 2rem;
+}

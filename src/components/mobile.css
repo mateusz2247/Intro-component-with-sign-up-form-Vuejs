@@ -1,0 +1,35 @@
+@media (max-width: 450px) {
+	html {
+		font-size: 9px;
+	}
+	#app {
+		margin: 2rem;
+		width: fit-content;
+		min-height: 90vh;
+		display: grid;
+		gap: 0rem;
+		grid-template-rows: 0.5fr 1fr;
+		grid-template-columns: none;
+	}
+	#app .formAndButtons .wrapper .terms {
+		font-size: 1rem;
+	}
+	#app .formAndButtons .wrapper form .warning {
+		font-size: 1rem;
+		font-weight: 700;
+	}
+	#app .formAndButtons .costBanner {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		font-size: 2rem;
+	}
+	#app .info .infoHeader {
+		font-size: 2rem;
+		text-align: center;
+	}
+	#app .info .infoParagraph {
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 3rem;
+	}
+}
